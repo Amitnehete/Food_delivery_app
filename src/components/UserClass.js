@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
 class UserClass extends React.Component {
   constructor(props) {
     super(props);
 
-    // console.log(props);
     this.state = {
       userInfo: {
-        name: 'Dummy',
-        location: 'Default',
+        name: "Dummy",
+        location: "Default",
       },
     };
     // console.log(this.props.name + 'Child Constructor');
@@ -17,9 +16,7 @@ class UserClass extends React.Component {
   async componentDidMount() {
     // console.log(this.props.name + 'Child Component Did Mount');
     // * API call
-    const data = await fetch(
-      'https://api.github.com/users/Amitnehete'
-    );
+    const data = await fetch("https://api.github.com/users/Amitnehete");
     const json = await data.json();
 
     this.setState({

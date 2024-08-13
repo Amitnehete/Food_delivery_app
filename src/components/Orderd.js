@@ -7,7 +7,9 @@ const OrderdPage = () => {
       {/* Header */}
       <header className="bg-white shadow-lg py-4 ">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl  justify-center items-center font-semibold text-gray-800">Singh Food Delivery </h1>
+          <h1 className="text-3xl  justify-center items-center font-semibold text-gray-800">
+            Food Delivery{" "}
+          </h1>
         </div>
       </header>
 
@@ -18,7 +20,7 @@ const OrderdPage = () => {
           <h2 className="text-2xl font-semibold mb-4">Featured Dishes</h2>
           {/* Display featured dishes here */}
         </div>
-        
+
         {/* Order Details */}
         <div className="w-1/3">
           <div className="bg-white shadow-md p-4">
@@ -34,7 +36,6 @@ const OrderdPage = () => {
           </div>
         </div>
       </main>
-      
     </div>
   );
 };

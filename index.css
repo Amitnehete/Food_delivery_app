@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
-
-
 .shimmer-menu,
 .shimmer-menu-main {
   background-color: #efefef;
@@ -112,10 +106,10 @@
 /* /* .res-card {
   width: 200px;
   /* height: 300px; */
-  /* height: 90%;
+/* height: 90%;
   padding: 5px; */
-  /* padding-bottom: 20px; */
-  /* border: 1px solid transparent; */
+/* padding-bottom: 20px; */
+/* border: 1px solid transparent; */
 /* }  */
 
 /* .res-card:hover {
@@ -166,7 +160,4 @@
 .filter{
   display: flex;
   flex-wrap: wrap;
-} */ 
-
-
- 
+} */
