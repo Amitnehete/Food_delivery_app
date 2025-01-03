@@ -29,8 +29,9 @@ const RestaurantMenu = () => {
     totalRatingsString,
   } = resInfo?.cards[2]?.card?.card?.info;
   const { lastMileTravelString, deliveryTime } =
-    resInfo?.cards[2]?.card?.card?.info ??
-    resInfo?.cards[2]?.card?.card?.info.sla;
+    resInfo?.cards[2]?.card?.card?.info ?.
+    resInfo?.cards[2]?.card?.card?.info?.sla || "Not Available";
+
 
   const { itemCards } =
     resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
@@ -76,7 +77,7 @@ const RestaurantMenu = () => {
         <div className="timeandprice w-full flex justify-start gap-5 p-3 max-[800px]:justify-around">
           <div className="time flex items-center gap-2 font-open text-black/80 font-bold">
             <MdOutlineTimelapse className="timeicon text-2xl" />{" "}
-            <span className="dtime font-[750]">{deliveryTime} MINS</span>
+            <span className="dtime font-[750]">{deliveryTime} Mins</span>
           </div>
           <div className="price flex items-center gap-2 font-open text-black/80 ">
             <HiOutlineCurrencyRupee className="rupeeicon text-2xl font-thin" />{" "}

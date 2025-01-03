@@ -6,10 +6,10 @@ import { AiFillStar } from "react-icons/ai";
 const RestaurantCard = (props) => {
   const { resData } = props;
   const { loggedInuser } = useContext(UserContext);
-  const { cloudinaryImageId, name, cuisines, avgRating,deliveryTime, costForTwo } =
+  const { cloudinaryImageId, name, cuisines, avgRating, costForTwo } =
     resData?.info;
 
-  //const deliveryTime = resData?.info?.sla;
+  const {deliveryTime} = resData?.info?.sla;
 
   const rateColor = avgRating >= 4 ? "bg-green-500" : "bg-orange-500";
 
